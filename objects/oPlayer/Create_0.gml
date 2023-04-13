@@ -1,0 +1,8 @@
+//Variables
+spd = 5;
+hspd = 0;
+vspd = 0;
+
+max_bags = 30;
+cu_bag = 5;
+
