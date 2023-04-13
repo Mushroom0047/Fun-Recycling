@@ -1,3 +1,5 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-if(sprite_index == sprEffectDisapear)instance_destroy();
+image_speed = 0;
+image_index = 0;
+image_angle = round(random(360));

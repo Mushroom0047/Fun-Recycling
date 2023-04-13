@@ -30,3 +30,11 @@ if place_meeting(x,y+vspd,oSolid) {
 //movement
 x += hspd;
 y += vspd;
+
+
+if(place_meeting(x, y, oResources)){
+	cu_bag++;
+	if(cu_bag <= max_bags){
+		instance_create_layer(x , y , "Instances_bags", oBag,  {yy: (6*cu_bag)});
+	}	
+}
