@@ -5,8 +5,8 @@ var up_key = (keyboard_check(ord("W")) || keyboard_check(vk_up));
 var down_key = (keyboard_check(ord("S")) || keyboard_check(vk_down));
  
 //movement
-hspd = (right_key  - left_key) * spd;
-vspd = (down_key - up_key) * spd;
+hspd = (right_key  - left_key) * global.player_spd;
+vspd = (down_key - up_key) * global.player_spd;
 
 //Animacion
 if(left_key)image_xscale = 1;
@@ -31,10 +31,14 @@ if place_meeting(x,y+vspd,oSolid) {
 x += hspd;
 y += vspd;
 
-
+//Coger bolsas
 if(place_meeting(x, y, oResources)){
-	cu_bag++;
-	if(cu_bag <= max_bags){
-		instance_create_layer(x , y , "Instances_bags", oBag,  {yy: (6*cu_bag)});
+	if(global.peso_actual <=global.peso_max){
+		//var yy = if(global.peso_actual<=8)? 16*global.peso_actual : 
+		var yyy = (global.peso_actual*4);
+		instance_create_layer(x , y , "Instances_bags", oBag,  {yy: yyy});
 	}	
 }
+
+
+

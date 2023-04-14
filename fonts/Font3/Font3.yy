@@ -1,7 +1,7 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "Font1",
+  "name": "Font3",
   "AntiAlias": 1,
   "applyKerning": 0,
   "ascender": 14,

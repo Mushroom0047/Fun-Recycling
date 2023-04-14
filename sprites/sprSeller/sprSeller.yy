@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"56dc920b-b98a-450c-8b85-2a5980f80362","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 1,
   "parent": {
     "name": "Sell",
     "path": "folders/Sprites/Sell.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 32,
-    "yorigin": 28,
+    "yorigin": 0,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
